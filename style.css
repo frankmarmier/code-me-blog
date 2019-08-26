@@ -11,7 +11,11 @@ body {
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 300;
+}
+.logo-text {
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .nav.nav-bar {
@@ -68,12 +72,13 @@ h1 {
     url("https://images.pexels.com/photos/35600/road-sun-rays-path.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .main-title {
   text-align: center;
   color: white;
-  font-size: 10rem;
+  font-size: 9vw;
   animation-duration: 2s;
   animation-name: slidein;
   margin: 0;
@@ -81,7 +86,16 @@ h1 {
 hr.white {
   border: 0;
   background: white;
-  color: white;
+
+  height: 1px;
+  width: 75%;
+  margin: auto;
+}
+
+hr.black {
+  border: 0;
+  background: black;
+
   height: 1px;
   width: 75%;
   margin: auto;
@@ -122,9 +136,19 @@ hr.white {
 
 .news {
   width: 100%;
-  background-color: rgba(8, 6, 6, 0.849);
+  /* background-color: rgba(8, 6, 6, 0.849); */
+  background: linear-gradient(
+    0deg,
+    rgba(147, 209, 142, 1) 0%,
+    rgba(227, 186, 170, 1) 100%
+  );
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
+}
+
+.news > .title {
+  color: black;
 }
 .container {
   display: flex;
@@ -137,6 +161,7 @@ hr.white {
   height: 100%;
 }
 .card {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
   width: 20%;
   height: auto;
   margin: 1.5rem;
@@ -151,8 +176,11 @@ hr.white {
   left: 0;
   right: 0;
   margin-left: auto;
+  margin-top: 15px;
   margin-right: auto;
   font-size: 1.2rem;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .card .link {
